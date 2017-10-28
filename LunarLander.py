@@ -52,8 +52,11 @@ def my_game(a,v,f):
     elif s[0] == 'n' or s[0] == 'N':
         print("Thank you for playing, Goodbye!")
     else:
-        print("Do you want to play again?")
-        s = input()
+        while s[0] not in ['n', 'N', 'y', 'Y']:
+            print("Do you want to play again?")
+            s = input()
+        else:
+            print("Game Over")
             
 if __name__ == '__main__':
     answer = my_game(1000.0, 0.0 , 1000.0)
