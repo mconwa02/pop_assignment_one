@@ -1,0 +1,68 @@
+
+1 .a list of numbers to enter in order to win the game by landing safely
+
+if __name__ == '__main__':
+    answer = my_game(20.0, 0.0 , 20.0)
+    print(answer)
+
+Game Over
+Your altitude is 0 metres above the moon
+Your velocity is 7.4 metres/second towards the moon
+You have 15.0 litres of fuel reamaining
+Congratulation you have landed safely!
+Thank you for playing, Goodbye!
+
+if __name__ == '__main__':
+    answer = my_game(31.25, 0.0 , 31.25)
+    print(answer)
+
+Game Over
+Your altitude is 0 metres above the moon
+Your velocity is 8.85 metres/second towards the moon
+You have 25.25 litres of fuel reamaining
+Congratulation you have landed safely!
+Thank you for playing, Goodbye!
+
+2. a list of numbers which will cause you to lose the game
+
+if __name__ == '__main__':
+    answer = my_game(1000.0, 0.0 , 1000.0)
+    print(answer)
+
+Game Over
+You blasted a 24.9 meter crater in the moon!
+Your velocity is 53.8 metres/second towards the moon
+You have 963.0 litres of fuel reamaining
+Thank you for playing, Goodbye!
+
+if __name__ == '__main__':
+    answer = my_game(2000.0, 0.0 , 200.0)
+    print(answer)
+
+Game Over
+You blasted a 5.9 meter crater in the moon!
+Your velocity is 75.55 metres/second towards the moon
+You have 148.0 litres of fuel reamaining
+Thank you for playing, Goodbye!
+
+if __name__ == '__main__':
+    answer = my_game(1000.0, 0.0 , 10.0)
+    print(answer)
+
+Game Over
+Your altitude is 918.75 metres above the moon
+Your velocity is 14.65 metres/second towards the moon
+You have 0 litres of fuel reamaining
+You have not landed on the moon!
+Thank you for playing, Goodbye!
+
+if __name__ == '__main__':
+    answer = my_game(100.0, 0.0 , 100.0)
+    print(answer)
+
+Game Over
+You blasted a 14.9 meter crater in the moon!
+Your velocity is 17.55 metres/second towards the moon
+You have 88.0 litres of fuel reamaining
+Thank you for playing, Goodbye!
+None
