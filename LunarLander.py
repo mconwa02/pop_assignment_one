@@ -4,17 +4,19 @@
 # velocity  = v  #metres/second
 # fuel      = f  #Litres
 
+import math 
+
 def my_game(a,v,f):
-    print("Your altitude is " + str(a) +" metres above the moon")
-    print("Your velocity is " + str(v) + " metres/second towards the moon")
-    print("You have "+ str(f) +" litres of fuel reamaining")
+    print("Your altitude is " + str(round(a, 2)) +" metres above the moon")
+    print("Your velocity is " + str(round(v, 2)) + " metres/second towards the moon")
+    print("You have "+ str(round(f, 2)) +" litres of fuel reamaining")
     v += 1.6 
     a -= v
     f -= 1
     while a > 0:
-        print("Your altitude is " + str(a) +" metres above the moon")
-        print("Your velocity is " + str(v) + " metres/second towards the moon")
-        print("You have "+ str(f) +" litres of fuel reamaining")            
+        print("Your altitude is " + str(round(a, 2)) +" metres above the moon")
+        print("Your velocity is " + str(round(v, 2)) + " metres/second towards the moon")
+        print("You have "+ str(round(f, 2)) +" litres of fuel reamaining")            
         v += 1.6 -0.15
         a -= v
         f -= 1
