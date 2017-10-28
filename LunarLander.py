@@ -13,7 +13,7 @@ def my_game(a,v,f):
     v += 1.6 
     a -= v
     f -= 1
-    while a > 0:
+    while a > 0 and f >0:
         print("Your altitude is " + str(round(a, 2)) +" metres above the moon")
         print("Your velocity is " + str(round(v, 2)) + " metres/second towards the moon")
         print("You have "+ str(round(f, 2)) +" litres of fuel reamaining")
@@ -31,9 +31,21 @@ def my_game(a,v,f):
             s = input()
     else:
         print("Game Over")
-        print("Your altitude is " + str(round(a, 2)) +" metres above the moon")
-        print("Your velocity is " + str(round(v, 2)) + " metres/second towards the moon")
-        print("You have "+ str(round(f, 2)) +" litres of fuel reamaining")
+        if a < 0 and v <= 10:
+            print("Your altitude is 0 metres above the moon")
+            print("Your velocity is " + str(round(v, 2)) + " metres/second towards the moon")
+            if f <= 0:
+                print("You have 0 litres of fuel reamaining")
+            else:
+                print("You have "+ str(round(f, 2)) +" litres of fuel reamaining")
+            print("Congratulation you have landed safely!")      
+        elif a < 0 and v > 10:
+            print("You blasted a " + str(round(abs(a), 2)) + " meter crater in the moon!")
+            print("Your velocity is " + str(round(v, 2)) + " metres/second towards the moon")          
+            if f <= 0:
+                print("You have 0 litres of fuel reamaining")
+            else:
+                print("You have "+ str(round(f, 2)) +" litres of fuel reamaining")                
         
 if __name__ == '__main__':
     answer = my_game(1000.0, 0.0 , 1000.0)
